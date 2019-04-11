@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: kiy0taka
+Build-Jdk: 1.6.0_65
+Extension-Name: emotional-jenkins-plugin
+Implementation-Title: emotional-jenkins-plugin
+Implementation-Version: 1.2
+Group-Id: org.jenkins-ci.plugins
+Short-Name: emotional-jenkins-plugin
+Long-Name: emotional-jenkins-plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Emotional+Jenkins+Plu
+ gin
+Plugin-Version: 1.2
+Hudson-Version: 1.572
+Jenkins-Version: 1.572
+Plugin-Developers: Masanobu Imai:masanobuimai:
+

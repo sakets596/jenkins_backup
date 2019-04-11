@@ -1,0 +1,6 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<net.hurstfrost.hudson.sounds.HudsonSoundsNotifier_-HudsonSoundsDescriptor plugin="sounds@0.5">
+  <soundArchive>file:/packages/apache-tomcat-9.0.16/bin/jar:file:/root/.jenkins/plugins/sounds/WEB-INF/lib/classes.jar!/sound-archive.zip</soundArchive>
+  <playMethod>BROWSER</playMethod>
+  <pipeTimeoutSecs>5</pipeTimeoutSecs>
+</net.hurstfrost.hudson.sounds.HudsonSoundsNotifier_-HudsonSoundsDescriptor>

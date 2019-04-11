@@ -1,0 +1,76 @@
+Started by an SCM change
+Building remotely on [8mha:////4PiSUc8fLPfW8qh6Y2uyMHXSkp8efRy6EL4Zp+ZXFarHAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygO40AumLp3sQAAAA=[0mnode2 (dev) in workspace /node2_root_dir/workspace/myHelloWorld
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sakets596/myHelloWorld.git # timeout=10
+Fetching upstream changes from https://github.com/sakets596/myHelloWorld.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/sakets596/myHelloWorld.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision cc7bd9e159f6fc18dcd1daaa282b6871a4476166 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cc7bd9e159f6fc18dcd1daaa282b6871a4476166
+Commit message: "commiting again"
+ > git rev-list --no-walk 73c64d8e28badcf85128e95fd294013cdb6fe1c7 # timeout=10
+No emails were triggered.
+[myHelloWorld] $ mvn install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.hello:HelloWorld >------------------------
+[INFO] Building HelloWorld Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ HelloWorld ---
+[8mha:////4BOc64wKsP/ojJ/35qIFE8j9Nq/tVx4QLVdT3KRvqdJAAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /node2_root_dir/workspace/myHelloWorld/src/main/resources
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ HelloWorld ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ HelloWorld ---
+[8mha:////4BOc64wKsP/ojJ/35qIFE8j9Nq/tVx4QLVdT3KRvqdJAAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /node2_root_dir/workspace/myHelloWorld/src/test/resources
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ HelloWorld ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ HelloWorld ---
+[INFO] No tests to run.
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.2:war (default-war) @ HelloWorld ---
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/root/.m2/repository/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.jar) to field java.util.Properties.defaults
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Packaging webapp
+[INFO] Assembling webapp [HelloWorld] in [/node2_root_dir/workspace/myHelloWorld/target/myHelloWorld]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/node2_root_dir/workspace/myHelloWorld/src/main/webapp]
+[INFO] Webapp assembled in [35 msecs]
+[INFO] Building war: /node2_root_dir/workspace/myHelloWorld/target/myHelloWorld.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.4:install (default-install) @ HelloWorld ---
+[INFO] Installing /node2_root_dir/workspace/myHelloWorld/target/myHelloWorld.war to /root/.m2/repository/com/hello/HelloWorld/1.0-SNAPSHOT/HelloWorld-1.0-SNAPSHOT.war
+[INFO] Installing /node2_root_dir/workspace/myHelloWorld/pom.xml to /root/.m2/repository/com/hello/HelloWorld/1.0-SNAPSHOT/HelloWorld-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.935 s
+[INFO] Finished at: 2019-03-25T11:46:15Z
+[INFO] ------------------------------------------------------------------------
+[myHelloWorld] $ /bin/sh -xe /tmp/jenkins8901209703636967657.sh
++ ./deploy.sh PROD
+Deploying to PROD Environment ....
+Email was triggered for: Always
+Email was triggered for: Success
+Sending email for trigger: Always
+Warning: root@instance-1.us-east1-b.c.windy-art-235009.internal is not a recognized user, but sending mail anyway
+Sending email to: root@instance-1.us-east1-b.c.windy-art-235009.internal sakets596@gmail.com
+Sending email for trigger: Success
+Warning: root@instance-1.us-east1-b.c.windy-art-235009.internal is not a recognized user, but sending mail anyway
+Sending email to: root@instance-1.us-east1-b.c.windy-art-235009.internal
+Finished: SUCCESS

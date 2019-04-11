@@ -1,0 +1,87 @@
+Started by upstream project "[8mha:////4FFRW/Is1VQ3gx9ouIKogGRk+0s47oCjzGJtWng3csXJAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/az8JH2P1Jyc/PD8opyU+IKi/KzU5BJ9AOEHf5HNAAAA[0mHelloWorld_project" build number [8mha:////4OB4xJOUJdscHNgWKMRheQp5xcpVrK9yJ2Qrd+Vu4mu9AAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYp/az8JH2P1Jyc/PD8opyU+IKi/KzU5BJ9YxMAi0/z4M8AAAA=[0m34
+originally caused by:
+ Started by upstream project "[8mha:////4DXDRiLTPcpHyZRCd4orKaaWnTIpaLTqMMy5ZBR51nBAAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZx/az8JH33xNzSkuzEopL4gqL8rNTkEn0A6zpf/cwAAAA=[0mGamutkart_project" build number [8mha:////4GFFHSnpJObFIwSghSBOzqhFpcfWuLDBEg/dRch6A9McAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZJ/az8JH33xNzSkuzEopL4gqL8rNTkEn1jEwDUm7emzgAAAA==[0m34
+ originally caused by:
+  Started by user [8mha:////4OwVVqMOTfD1HK83eEAqnqglv61+qJXOdBdweXTeWqqSAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL94sTs1BIAm184VcAAAAA=[0mSaket
+Building remotely on [8mha:////4Gus1mmKvtN8zqMp7oWcL3A828U5/SFkNZxuo1uMWtU8AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygOw0BADPgR8QAAAA=[0mnode1 (prod) in workspace /node1_root_dir/workspace/mygamutkart
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sakets596/mygamutkart.git # timeout=10
+Fetching upstream changes from https://github.com/sakets596/mygamutkart.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/sakets596/mygamutkart.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 0cbf60cff43f4e032d7a6a25947b5f51195ef850 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0cbf60cff43f4e032d7a6a25947b5f51195ef850
+Commit message: "changing war file to mygamutkart.war"
+ > git rev-list --no-walk 0cbf60cff43f4e032d7a6a25947b5f51195ef850 # timeout=10
+No emails were triggered.
+[mygamutkart] $ mvn install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.gamutgurus:gamutkart >----------------------
+[INFO] Building gamutkart 1.1-RELEASE
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gamutkart ---
+[8mha:////4BOc64wKsP/ojJ/35qIFE8j9Nq/tVx4QLVdT3KRvqdJAAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /node1_root_dir/workspace/mygamutkart/src/main/resources
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gamutkart ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gamutkart ---
+[8mha:////4BOc64wKsP/ojJ/35qIFE8j9Nq/tVx4QLVdT3KRvqdJAAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /node1_root_dir/workspace/mygamutkart/src/test/resources
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ gamutkart ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ gamutkart ---
+[INFO] Surefire report directory: /node1_root_dir/workspace/mygamutkart/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.gamutkart.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.2:war (default-war) @ gamutkart ---
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/root/.m2/repository/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.jar) to field java.util.Properties.defaults
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Packaging webapp
+[INFO] Assembling webapp [gamutkart] in [/node1_root_dir/workspace/mygamutkart/target/mygamutkart]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/node1_root_dir/workspace/mygamutkart/src/main/webapp]
+[INFO] Webapp assembled in [40 msecs]
+[INFO] Building war: /node1_root_dir/workspace/mygamutkart/target/mygamutkart.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.4:install (default-install) @ gamutkart ---
+[INFO] Installing /node1_root_dir/workspace/mygamutkart/target/mygamutkart.war to /root/.m2/repository/com/gamutgurus/gamutkart/1.1-RELEASE/gamutkart-1.1-RELEASE.war
+[INFO] Installing /node1_root_dir/workspace/mygamutkart/pom.xml to /root/.m2/repository/com/gamutgurus/gamutkart/1.1-RELEASE/gamutkart-1.1-RELEASE.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.943 s
+[INFO] Finished at: 2019-04-04T11:45:33Z
+[INFO] ------------------------------------------------------------------------
+[mygamutkart] $ /bin/bash /tmp/jenkins16885172124982325329.sh
+Email was triggered for: Always
+Email was triggered for: Success
+Sending email for trigger: Always
+Sending email to: sakets596@gmail.com
+Sending email for trigger: Success
+An attempt to send an e-mail to empty list of recipients, ignored.
+Finished: SUCCESS

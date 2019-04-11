@@ -1,0 +1,62 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.32">
+  <actions/>
+  <description>This complete project is created by clicking on pipeline syntex. And choosing appropiate option.</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>4</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.65">
+    <script>node(&apos;dev&apos;) {
+dir(&apos;/node2_root_dir/workspace/mypipeline1&apos;) {
+    stage(&apos;checkout&apos;) {
+    echo &apos;Checking out from git&apos;
+   git &apos;https://github.com/sakets596/pipeline_test_1.git&apos;
+    }
+    
+    stage(&apos;Build&apos;) {
+     echo &apos;Building the artifact&apos;   
+   sh label: &apos;&apos;, script: &apos;mvn clean install&apos;
+    }
+    
+    stage(&apos;Archieving artifact&apos;) {
+    archive &apos;target/*.war&apos;
+    }
+    
+    stage(&apos;Deploying&apos;) {
+     echo &apos;Deploying the artifact to tomcat server(tomcat2)&apos;   
+   sh label: &apos;&apos;, script: &apos;sshpass -p &quot;dev_tomcat&quot; scp target/website1.war tomcat2:/packages/apache-tomcat-9.0.16/webapps/&apos;
+    }
+    
+    stage(&apos;stopping tomcat&apos;) {
+     echo &apos;Stopping tomcat service&apos;   
+   sh label: &apos;&apos;, script: &apos;sshpass -p &quot;dev_tomcat&quot; ssh -q tomcat2 /packages/apache-tomcat-9.0.16/bin/shutdown.sh&apos;
+    }
+    
+    stage(&apos;starting tomcat&apos;) {
+     echo &apos;Starting tomcat service&apos;   
+   sh label: &apos;&apos;, script: &apos;sshpass -p &quot;dev_tomcat&quot; ssh -q tomcat2 /packages/apache-tomcat-9.0.16/bin/startup.sh&apos;
+    }
+    
+    stage(&apos;Notifying&apos;) {
+        echo &apos;===========================================================================&apos;
+        echo &apos;sending mail as notification&apos;
+        emailext body: &apos;Check console output at $BUILD_URL to view the results.&apos;, subject: &apos;$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!&apos;, to: &apos;sakets596@gmail.com&apos;
+        echo &apos;===========================================================================&apos;
+    }
+    
+}
+ 
+}</script>
+    <sandbox>false</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

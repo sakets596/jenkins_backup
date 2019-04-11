@@ -1,0 +1,10 @@
+Started on Mar 25, 2019, 11:46:00 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 73c64d8e28badcf85128e95fd294013cdb6fe1c7 (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/sakets596/myHelloWorld.git # timeout=10
+Found 1 remote heads on https://github.com/sakets596/myHelloWorld.git
+[poll] Latest remote head revision on refs/heads/master is: cc7bd9e159f6fc18dcd1daaa282b6871a4476166
+Done. Took 0.51 sec
+Changes found

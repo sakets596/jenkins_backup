@@ -1,0 +1,171 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.32">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>saket</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.13">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.9.3">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.6">
+              <sha1>aa6ea5ad801a447b9657b38221c08adcadbfc588</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>15</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/sakets596/pipeline_test_1.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.9.3">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/node2_root_dir/workspace/mypipeline1</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.7">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/sakets596/pipeline_test_1.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <hudson.tasks.MailMessageIdAction plugin="mailer@1.23">
+      <messageId>&lt;2087391980.45.1554304570341.JavaMail.root@fbf6a8cc432c&gt;</messageId>
+    </hudson.tasks.MailMessageIdAction>
+  </actions>
+  <queueId>160</queueId>
+  <timestamp>1554304558675</timestamp>
+  <startTime>1554304558679</startTime>
+  <result>SUCCESS</result>
+  <duration>12929</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node(&apos;dev&apos;) {
+dir(&apos;/node2_root_dir/workspace/mypipeline1&apos;) {
+    stage(&apos;checkout&apos;) {
+    echo &apos;Checking out from git&apos;
+   git &apos;https://github.com/sakets596/pipeline_test_1.git&apos;
+    }
+    
+    stage(&apos;Build&apos;) {
+     echo &apos;Building the artifact&apos;   
+   sh label: &apos;&apos;, script: &apos;mvn clean install&apos;
+    }
+    
+    stage(&apos;Archieving artifact&apos;) {
+    archive &apos;target/*.war&apos;
+    }
+    
+    stage(&apos;Deploying&apos;) {
+     echo &apos;Deploying the artifact to tomcat server(tomcat2)&apos;   
+   sh label: &apos;&apos;, script: &apos;sshpass -p &quot;dev_tomcat&quot; scp target/website1.war tomcat2:/packages/apache-tomcat-9.0.16/webapps/&apos;
+    }
+    
+    stage(&apos;stopping tomcat&apos;) {
+     echo &apos;Stopping tomcat service&apos;   
+   sh label: &apos;&apos;, script: &apos;sshpass -p &quot;dev_tomcat&quot; ssh -q tomcat2 /packages/apache-tomcat-9.0.16/bin/shutdown.sh&apos;
+    }
+    
+    stage(&apos;starting tomcat&apos;) {
+     echo &apos;Starting tomcat service&apos;   
+   sh label: &apos;&apos;, script: &apos;sshpass -p &quot;dev_tomcat&quot; ssh -q tomcat2 /packages/apache-tomcat-9.0.16/bin/startup.sh&apos;
+    }
+    
+    stage(&apos;Notifying&apos;) {
+        echo &apos;===========================================================================&apos;
+        echo &apos;sending mail as notification&apos;
+        emailext body: &apos;Check console output at $BUILD_URL to view the results.&apos;, subject: &apos;$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!&apos;, to: &apos;sakets596@gmail.com&apos;
+        echo &apos;===========================================================================&apos;
+    }
+    
+}
+ 
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>597688703</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>41426437</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1635135433</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>57061987</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>111980347</long>
+      </entry>
+    </timings>
+    <sandbox>false</sandbox>
+    <iota>54</iota>
+    <head>1:54</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.3">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/sakets596/pipeline_test_1.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>master</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node>node2</node>
+      <workspace>/node2_root_dir/workspace/mypipeline1</workspace>
+      <changelogFile>/root/.jenkins/jobs/mypipeline1/builds/15/changelog0.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

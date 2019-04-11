@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: pierrebeitz
+Build-Jdk: 1.8.0_172
+Extension-Name: shelve-project-plugin
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: shelve-project-plugin
+Implementation-Version: 2.3
+Group-Id: org.jenkins-ci.plugins
+Short-Name: shelve-project-plugin
+Long-Name: Shelve Project Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Shelve+Project+Plugin
+Plugin-Version: 2.3
+Hudson-Version: 2.60.3
+Jenkins-Version: 2.60.3
+Plugin-Dependencies: cloudbees-folder:6.5.1;resolution:=optional
+Plugin-Developers: Ben Patterson:bpatterson:patterson.ben@gmail.com,As
+ h Lux:ashlux:ashlux@gmail.com,Pierre Beitz:pierrebtz:pibeitz@gmail.com
+

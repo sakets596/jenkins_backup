@@ -1,0 +1,22 @@
+commit 94ecf08ff5c5fc61745cda77b07cf47cefe98bd6
+tree 1afe7e95a815f3dd7468b43d5cecae5e1e004935
+parent d8de4dff610a1dd847f65da52fdab4b12cfc66d1
+author root <root@instance-1.us-east1-b.c.windy-art-235009.internal> 2019-03-25 14:26:05 +0000
+committer root <root@instance-1.us-east1-b.c.windy-art-235009.internal> 2019-03-25 14:26:05 +0000
+
+    changing Jenkins file
+
+
+
+:100644 100644 ddd5393a3506c349c95a92b2eb0718e2609f9de3 a23c65e491247a230383be261b32293410e93221 M	Jenkinsfile
+commit d8de4dff610a1dd847f65da52fdab4b12cfc66d1
+tree b719844f9beda428fe04573745f9ffdf92c5433e
+parent 5caff1940e324be2dde6ee9eeffad3040c8f3d2f
+author root <root@instance-1.us-east1-b.c.windy-art-235009.internal> 2019-03-25 14:21:18 +0000
+committer root <root@instance-1.us-east1-b.c.windy-art-235009.internal> 2019-03-25 14:21:18 +0000
+
+    Modifying Jenkins
+
+
+
+:100644 100644 c06d4d2930cfa0ba44c40f8d7aa3c9a427f23af7 ddd5393a3506c349c95a92b2eb0718e2609f9de3 M	Jenkinsfile

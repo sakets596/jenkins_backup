@@ -1,0 +1,86 @@
+Started by user [8mha:////4OwVVqMOTfD1HK83eEAqnqglv61+qJXOdBdweXTeWqqSAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL94sTs1BIAm184VcAAAAA=[0mSaket
+Building remotely on [8mha:////4Gus1mmKvtN8zqMp7oWcL3A828U5/SFkNZxuo1uMWtU8AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygOw0BADPgR8QAAAA=[0mnode1 (prod) in workspace /node1_root_dir/workspace/Gamutkart_project
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sakets596/gamutkart.git # timeout=10
+Fetching upstream changes from https://github.com/sakets596/gamutkart.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/sakets596/gamutkart.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 94ecf08ff5c5fc61745cda77b07cf47cefe98bd6 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 94ecf08ff5c5fc61745cda77b07cf47cefe98bd6
+Commit message: "changing Jenkins file"
+ > git rev-list --no-walk 94ecf08ff5c5fc61745cda77b07cf47cefe98bd6 # timeout=10
+No emails were triggered.
+[Gamutkart_project] $ mvn install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.gamutgurus:gamutkart >----------------------
+[INFO] Building gamutkart 1.1-RELEASE
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gamutkart ---
+[8mha:////4BOc64wKsP/ojJ/35qIFE8j9Nq/tVx4QLVdT3KRvqdJAAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /node1_root_dir/workspace/Gamutkart_project/src/main/resources
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gamutkart ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gamutkart ---
+[8mha:////4BOc64wKsP/ojJ/35qIFE8j9Nq/tVx4QLVdT3KRvqdJAAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /node1_root_dir/workspace/Gamutkart_project/src/test/resources
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ gamutkart ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ gamutkart ---
+[INFO] Surefire report directory: /node1_root_dir/workspace/Gamutkart_project/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.gamutkart.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.2:war (default-war) @ gamutkart ---
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/root/.m2/repository/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.jar) to field java.util.Properties.defaults
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Packaging webapp
+[INFO] Assembling webapp [gamutkart] in [/node1_root_dir/workspace/Gamutkart_project/target/gamutkart]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/node1_root_dir/workspace/Gamutkart_project/src/main/webapp]
+[INFO] Webapp assembled in [40 msecs]
+[INFO] Building war: /node1_root_dir/workspace/Gamutkart_project/target/gamutkart.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[8mha:////4L4d3uI657yg7p2e0pguakaQzRokl/DarC0ADGzv1aNiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.4:install (default-install) @ gamutkart ---
+[INFO] Installing /node1_root_dir/workspace/Gamutkart_project/target/gamutkart.war to /root/.m2/repository/com/gamutgurus/gamutkart/1.1-RELEASE/gamutkart-1.1-RELEASE.war
+[INFO] Installing /node1_root_dir/workspace/Gamutkart_project/pom.xml to /root/.m2/repository/com/gamutgurus/gamutkart/1.1-RELEASE/gamutkart-1.1-RELEASE.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.371 s
+[INFO] Finished at: 2019-04-03T13:55:55Z
+[INFO] ------------------------------------------------------------------------
+[Gamutkart_project] $ /bin/sh -xe /tmp/jenkins4983850965877768186.sh
++ sshpass -p ******** scp target/gamutkart.war ********:/packages/apache-tomcat-9.0.16/webapps/
+Archiving artifacts
+Email was triggered for: Always
+Email was triggered for: Success
+Sending email for trigger: Always
+Sending email to: sakets596@gmail.com
+Sending email for trigger: Success
+An attempt to send an e-mail to empty list of recipients, ignored.
+Triggering a new build of [8mha:////4FFRW/Is1VQ3gx9ouIKogGRk+0s47oCjzGJtWng3csXJAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/az8JH2P1Jyc/PD8opyU+IKi/KzU5BJ9AOEHf5HNAAAA[0mHelloWorld_project
+Finished: SUCCESS
